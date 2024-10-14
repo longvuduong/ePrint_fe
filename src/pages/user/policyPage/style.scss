@@ -1,0 +1,108 @@
+@use 'sass:map';
+@import '../../../style/pages/all';
+
+.grid.policy-background {
+  background-image: url('../../../img/news-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+}
+.sticky-sidebar {
+  position: sticky;
+  top: 0px;
+}
+.col.l-4 {
+  .policy-content_summary {
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 20px;
+    .sidebar {
+      padding: 0px;
+      list-style: none;
+      transition: left 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      .summary_list {
+        text-transform: uppercase;
+        list-style: inside;
+        list-style-type: decimal;
+        padding: 0px;
+        color: map.get($theme-color, 'text');
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        .summary_list-align {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+        li {
+          text-transform: none;
+          padding-left: 40px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+}
+.policy-content_detail {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 30px !important;
+  .summary_list-align {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: map.get($theme-color, 'button');
+  }
+  .detail_list {
+    list-style-type: decimal;
+    list-style-position: inside;
+    font-size: 16px;
+    font-weight: 700;
+    color: map.get($theme-color, 'button');
+    padding: 0px;
+    .detail_item {
+      .detail_item-step {
+        margin-top: 10px;
+        padding: 0px;
+        list-style: none;
+        color: black;
+        li {
+          line-height: 27px;
+          font-weight: 500;
+          span {
+            font-weight: 700;
+          }
+          .paragraph {
+            padding-left: 30px;
+          }
+        }
+        .repay_notice {
+          text-decoration: underline;
+          font-size: 700;
+        }
+        .repay_notice-dscr {
+          font-weight: 500;
+          padding-left: 30px;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+}
+.policy_complain {
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 30px;
+  line-height: 27px;
+  margin-top: 10px;
+  .paragraph {
+    padding-left: 30px;
+  }
+}

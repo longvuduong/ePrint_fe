@@ -1,0 +1,10 @@
+@use 'sass:map';
+@import '../pages/theme';
+@import '../base.scss';
+@import '../grid.scss';
+.button-submit {
+    font-size: 14px;
+    background-color: map.get($theme-color, 'button');
+    color: map.get($theme-color, 'main');
+    border: none;
+}

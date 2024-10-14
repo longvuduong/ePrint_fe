@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --While-color: #fff;
+    --back-color: #000;
+    --text-color: rgb(34, 34, 34);
+    --color-text-sidebar: #ffffff80;
+    --primary-color: #00c0f4;
+    --scrollbar-color: rgba(197, 183, 183, 0.747);
+    --height-header: 64px;
+    --steps: 10;
+    --saturation: 80%;
+    --lightness: 60%;
+    --hue-offset: 320;
+    --duration: 5000ms;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* 65.5%=10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    transition: all linear 0.8s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tox .tox-notification--warn,
+.tox .tox-notification--warning {
+    display: none !important;
+}
+
+.containerized {
+    background-color: #f2f7f8;
+    height: calc(100vh - var(--height-header));
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 40px;
+    position: relative;
+
+    &::-webkit-scrollbar-track {
+        border-radius: 12px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0.6vw;
+        height: 6px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 12px;
+        background-color: var(--scrollbar-color);
+    }
+}
+
+// .container {
+//     z-index: 1;
+//     background-color: #fff;
+//     // padding: 12px 12px;
+//     // border-radius: 20px;
+// }
+
+.msg {
+    text-align: center;
+    display: block;
+    margin: 20px 0 20px 0;
+    font-size: 1.6rem;
+    color: red;
+    height: 20px;
+}
+
+.text-white {
+    color: white !important;
+}

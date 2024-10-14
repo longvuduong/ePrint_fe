@@ -1,0 +1,32 @@
+@use 'sass:map';
+@import '../../../style/pages/all';
+
+.news_detail-wrapper {
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  .news_detail-container {
+    text-align: center;
+    .news_detail-title {
+      font-size: 30px;
+    }
+    .news_published-date {
+      display: flex;
+      color: black;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      span {
+        color: #7e7e7e;
+      }
+      .news_published-date-space {
+        height: 1px;
+        width: 32px;
+        background-color: #7e7e7e;
+      }
+    }
+    .news_detail-content {
+      text-align: left;
+    }
+  }
+}

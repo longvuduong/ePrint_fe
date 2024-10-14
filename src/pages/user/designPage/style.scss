@@ -1,0 +1,59 @@
+@use 'sass:map';
+@import '../../../style/pages/all';
+
+.grid.design-pack_background {
+    background-image: url(http://localhost:3000/static/media/background-news.22cc300….png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2000;
+    position: relative;
+}
+.grid.wide.design-pack {
+    padding: 100px 0px;
+}
+.design-pack_title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43px;
+    color: map.get($theme-color, 'text');
+    span {
+        color: map.get($theme-color, 'button');
+    }
+}
+.design-pack_align {
+    margin: 20px 0px;
+}
+.design-pack_content {
+    position: relative;
+    .design-pack_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        z-index: -1000;
+        position: relative;
+    }
+    .design-pack_number {
+        display: flex;
+        align-items: center;
+        color: white;
+        position: absolute;
+        bottom: 25%;
+        left: 5%;
+        width: 103px;
+        height: 26.56px;
+        background: -webkit-linear-gradient(45deg, #f74a8f, #04019b);
+        border-radius: 41px;
+        justify-content: center;
+    }
+    .design-pack_dscr {
+        text-transform: uppercase;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+    }
+}

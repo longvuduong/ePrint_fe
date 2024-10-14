@@ -1,0 +1,146 @@
+@use 'sass:map';
+@import '../../../../style/pages/all';
+// achievment
+.achievement-align {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.achievement-number {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 43px;
+  background: -webkit-linear-gradient(10deg, #f74a8f, #04019b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+}
+.achievement-dscr {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: black;
+  margin: 0px;
+}
+
+.grid.wide.content {
+  padding: 50px 0px;
+}
+.footer {
+  background: #1a178cd9;
+  width: 1440px;
+  height: 609px;
+  top: 5142px;
+  background-image: url('../../../../img/Rectangle\ 35.png');
+  background-size: cover;
+  .title {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    margin-top: 0px;
+  }
+  ul {
+    list-style: none;
+    color: map.get($theme-color, 'main');
+  }
+}
+.footer-align {
+  display: flex;
+  align-items: baseline;
+}
+.icon {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: map.get($theme-color, 'main');
+}
+.follow {
+  padding-left: 0px !important;
+}
+.footer_dscr {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: map.get($theme-color, 'main');
+  span {
+    font-weight: 700;
+  }
+}
+form {
+  margin-bottom: 60px;
+  justify-content: center;
+  .group {
+    display: flex;
+    align-items: center;
+    input {
+      font-size: 16px;
+      width: 466px;
+      color: map.get($theme-color, 'text');
+      border: none;
+      height: 37px;
+    }
+    ::placeholder {
+      color: #b8b8b8;
+    }
+    button {
+      padding: 0 26px;
+      height: 37px;
+      min-width: max-content;
+      font-weight: 700;
+    }
+  }
+}
+.footer__widget__social {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 15px;
+    width: 48px;
+  }
+}
+.footer__certificate {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  margin-top: 30px;
+  img {
+    font-size: 58px;
+    width: 151px;
+    height: 58px;
+  }
+}
+
+.slogan {
+  padding-top: 0px;
+  .footer-logo {
+    width: 172px;
+    height: 64.8px;
+  }
+}
+.slogan .icon {
+  padding-left: 40px;
+}
+.slogan .icon-dscr {
+  font-weight: 500;
+  span {
+    font-weight: 700;
+  }
+}
+.icon-dscr__box {
+  display: flex;
+  .icon-dscr {
+    margin: 0px;
+  }
+}
+.icon-dscr {
+  margin: 40px 0px;
+}
+.contact {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.icon-dscr2 {
+  margin: 40px 0px 0px 0px;
+}
